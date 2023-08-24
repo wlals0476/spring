@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header th:insert="~{fragment/header::headers}"></header>
+
+    <main>
+        <h1>메인 페이지</h1>
+        <a href="/upload">이미지 업로드</a>
+        <a href="/list">사원 목록 페이지 이동</a>
+    </main>
+
+    <footer th:insert="~{fragment/footer::footers}"></footer>
+
+</body>
+</html>
